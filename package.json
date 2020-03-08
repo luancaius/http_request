@@ -4,7 +4,7 @@
   "description": "A simple way to make http requests",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No test specified\""
   },
   "repository": {
     "type": "git",
@@ -13,7 +13,8 @@
   "keywords": [
     "http",
     "request",
-    "api"
+    "api",
+    "simple"
   ],
   "author": "luan caius ramos",
   "license": "MIT",
