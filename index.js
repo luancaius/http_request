@@ -1,5 +1,5 @@
-function httpSimpleRequest(input){
-    return input.HttpMethod;
+function simpleRequest(input){
+    return "testing";
 }
 
-module.exports = httpSimpleRequest;
+module.exports = simpleRequest;
