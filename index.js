@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const axios = require('axios');
 
 async function request(input){
@@ -32,10 +31,4 @@ async function request(input){
 }
 
 module.exports = request;
-=======
-function simpleRequest(input){
-    return "testing";
-}
 
-module.exports = simpleRequest;
->>>>>>> ecbed5e8a93626c0455fb70109c2694607b869c9
