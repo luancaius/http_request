@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/luancaius/http_request/issues"
   },
-  "homepage": "https://github.com/luancaius/http_request#readme"
+  "homepage": "https://github.com/luancaius/http_request#readme",
+  "devDependencies": {
+    "axios": "^0.19.2"
+  }
 }
