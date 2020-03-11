@@ -11,19 +11,39 @@ async function request(input){
     };
 
     const url=input.domain+"/"+input.path
-    await axios.get(url, {
-        params: input.params
-      })
-      .then(function (res) {
-        response.data = res.data
-        response.httpHeader = res.status
-      })
-      .catch(function (error) {
-        console.log(error);
-      })
-      .then(function () {
-        // always executed
-      });  
+    if(input.httpMethod == "GET"){
+        await axios.get(url, {
+            params: input.params,
+            headers: input.headers
+        })
+        .then(function (res) {
+            response.data = res.data
+            response.httpHeader = res.status
+        })
+        .catch(function (error) {
+            console.log(error);
+        })
+        .then(function () {
+            // always executed
+        });  
+    }
+    else if(input.httpMethod == "POST"){
+        await axios.post(url, {
+            data: input.body,
+            headers: input.headers
+        })
+        .then(function (res) {
+            response.data = res.data
+            response.httpHeader = res.status
+        })
+        .catch(function (error) {
+            console.log(error);
+        })
+        .then(function () {
+            // always executed
+        });
+
+    }
     endTime = new Date();
     response.timeInMilisec = endTime - startTime; 
 
