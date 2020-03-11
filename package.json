@@ -1,6 +1,6 @@
 {
   "name": "http-simple-request",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "A simple way to make http requests",
   "main": "index.js",
   "scripts": {
